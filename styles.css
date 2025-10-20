@@ -1345,7 +1345,7 @@ html {
 /* Merch Section */
 .merch-section {
     padding: 100px 40px;
-    background-color: #f8f8f8;
+    background-color: transparent;
 }
 
 .merch-grid {
