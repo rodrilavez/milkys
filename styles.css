@@ -668,11 +668,11 @@ body {
     }
     
     .hero-text-logo-image {
-        height: 60px;
+        height: 80px;
     }
     
     .hero-address-image {
-        height: 90px;
+        height: 120px;
     }
     
     .section-title-image {
@@ -791,11 +791,11 @@ body {
     }
     
     .hero-text-logo-image {
-        height: 45px;
+        height: 65px;
     }
     
     .hero-address-image {
-        height: 70px;
+        height: 100px;
     }
     
     .hero-subtitle {
@@ -1357,26 +1357,25 @@ html {
 }
 
 .merch-item {
-    background: white;
-    border: 2px solid #e0e0e0;
+    background: transparent;
+    border: none;
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: none;
 }
 
 .merch-item:hover {
-    border-color: #333;
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .merch-item img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 20px;
-    border: 1px solid #e0e0e0;
+    border: none;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .merch-item h3 {
@@ -1408,6 +1407,7 @@ html {
     padding: 12px 25px;
     font-size: 14px;
     font-weight: 600;
+    font-family: 'Special Elite', 'Courier New', monospace;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
