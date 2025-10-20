@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MILKYS.LA</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,8 +16,14 @@
             </a>
         </div>
         <div class="nav-right">
+            <a href="news.html" class="nav-link">
+                <img src="milkys-news.png" alt="News" class="news-logo">
+            </a>
             <a href="events.html" class="nav-link">
                 <img src="milkys-events.png" alt="Events" class="events-logo">
+            </a>
+            <a href="merch.html" class="nav-link">
+                <img src="milkys-merch.png" alt="Merch" class="merch-logo">
             </a>
             <a href="contact.html" class="nav-link">
                 <img src="milkys-contact.png" alt="Contact" class="contact-logo">
@@ -28,11 +34,100 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-logo">
-            <img src="milkyslogo.png" alt="MILKYS.LA" class="hero-logo-image">
-            <div class="hero-address">
-                <img src="milkys-address.png" alt="5240 Alhambra Ave, Los Angeles CA 90032" class="hero-address-image">
+            <img src="milkys-cartoon.png" alt="MILKYS.LA" class="hero-logo-image">
+            <div class="hero-overlay">
+                <div class="hero-text-logo">
+                    <img src="milkyslogo-text.png" alt="MILKYS.LA Text" class="hero-text-logo-image">
+                </div>
+                <a href="https://maps.app.goo.gl/BYCCBnfMS2692xCZ6" target="_blank" class="hero-address">
+                    <img src="milkys-address.png" alt="5240 Alhambra Ave, Los Angeles CA 90032" class="hero-address-image">
+                </a>
             </div>
         </div>
     </header>
+
+    <!-- Merch Section -->
+    <section class="merch-section" id="merch">
+        <div class="section-header">
+            <img src="milkys-merch.png" alt="Merch" class="section-title-image">
+        </div>
+        <div class="merch-grid">
+            <div class="merch-item">
+                <img src="merch-img/milkys-tshirt.png" alt="MILKYS T-Shirt" />
+                <h3>MILKYS T-Shirt</h3>
+                <p>Official tee with the classic logo</p>
+                <div class="merch-price">$25</div>
+                <button class="merch-btn">Buy Now</button>
+            </div>
+            <div class="merch-item">
+                <img src="merch-img/stickers.png" alt="MILKYS Logo Sticker" />
+                <h3>Logo Stickers</h3>
+                <p>Sticker pack with official logo</p>
+                <div class="merch-price">$8</div>
+                <button class="merch-btn">Buy Now</button>
+            </div>
+            <div class="merch-item">
+                <img src="merch-img/milkys-totebag.png" alt="MILKYS Tote Bag" />
+                <h3>Tote Bag</h3>
+                <p>Canvas bag with exclusive design</p>
+                <div class="merch-price">$18</div>
+                <button class="merch-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="news">
+        <div class="section-header">
+            <img src="milkys-news.png" alt="News" class="section-title-image">
+        </div>
+        <div class="news-container">
+            <div class="news-grid">
+                <article class="news-item">
+                    <div class="news-date">Oct 15, 2025</div>
+                    <h3>New Artist Residency Program</h3>
+                    <p>We're announcing our new residency program for local artists. A unique opportunity to develop and present new musical projects.</p>
+                    <a href="#" class="news-link">Read More</a>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">Oct 10, 2025</div>
+                    <h3>Space Expansion</h3>
+                    <p>We're expanding our facilities to include a new recording studio and rehearsal room equipped with the best technology.</p>
+                    <a href="#" class="news-link">Read More</a>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">Oct 5, 2025</div>
+                    <h3>Local Artist Collaboration</h3>
+                    <p>Launching a new initiative to collaborate with Los Angeles musicians and producers, creating a true creative hub.</p>
+                    <a href="#" class="news-link">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Signup -->
+    <footer class="footer-signup">
+        <div class="signup-container">
+            <h3>Stay Connected</h3>
+            <p>Subscribe to receive the latest news, events and exclusive releases</p>
+            <form class="signup-form">
+                <input type="email" class="signup-input" placeholder="Your email" required>
+                <button type="submit" class="signup-btn">Subscribe</button>
+            </form>
+            <p class="signup-note">No spam, just the good stuff. You can unsubscribe anytime.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

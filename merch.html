@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch - MILKYS.LA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-left">
+            <a href="index.html" class="mini-logo">
+                <img src="milkyslogo.png" alt="MILKYS.LA" class="mini-logo-image">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="news.html" class="nav-link">
+                <img src="milkys-news.png" alt="News" class="news-logo">
+            </a>
+            <a href="events.html" class="nav-link">
+                <img src="milkys-events.png" alt="Events" class="events-logo">
+            </a>
+            <a href="merch.html" class="nav-link active">
+                <img src="milkys-merch.png" alt="Merch" class="merch-logo">
+            </a>
+            <a href="contact.html" class="nav-link">
+                <img src="milkys-contact.png" alt="Contact" class="contact-logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Merch Header -->
+    <header class="events-hero">
+        <h1 class="page-title">OFFICIAL MERCH</h1>
+    </header>
+
+    <!-- Merch Section -->
+    <section class="merch-section" id="merch">
+        <div class="merch-grid">
+            <div class="merch-item">
+                <img src="merch-img/milkys-tshirt.png" alt="MILKYS T-Shirt" />
+                <h3>MILKYS T-Shirt</h3>
+                <p>Official tee with the classic logo</p>
+                <div class="merch-price">$25</div>
+                <button class="merch-btn">Buy Now</button>
+            </div>
+            <div class="merch-item">
+                <img src="merch-img/stickers.png" alt="MILKYS Logo Sticker" />
+                <h3>Logo Stickers</h3>
+                <p>Sticker pack with official logo</p>
+                <div class="merch-price">$8</div>
+                <button class="merch-btn">Buy Now</button>
+            </div>
+            <div class="merch-item">
+                <img src="merch-img/milkys-totebag.png" alt="MILKYS Tote Bag" />
+                <h3>Tote Bag</h3>
+                <p>Canvas bag with exclusive design</p>
+                <div class="merch-price">$18</div>
+                <button class="merch-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Signup -->
+    <footer class="footer-signup">
+        <div class="signup-container">
+            <h3>Stay Connected</h3>
+            <p>Subscribe to receive the latest news, events and exclusive releases</p>
+            <form class="signup-form">
+                <input type="email" class="signup-input" placeholder="Your email" required>
+                <button type="submit" class="signup-btn">Subscribe</button>
+            </form>
+            <p class="signup-note">No spam, just the good stuff. You can unsubscribe anytime.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

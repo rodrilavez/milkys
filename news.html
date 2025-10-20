@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - MILKYS.LA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-left">
+            <a href="index.html" class="mini-logo">
+                <img src="milkyslogo.png" alt="MILKYS.LA" class="mini-logo-image">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="news.html" class="nav-link active">
+                <img src="milkys-news.png" alt="News" class="news-logo">
+            </a>
+            <a href="events.html" class="nav-link">
+                <img src="milkys-events.png" alt="Events" class="events-logo">
+            </a>
+            <a href="merch.html" class="nav-link">
+                <img src="milkys-merch.png" alt="Merch" class="merch-logo">
+            </a>
+            <a href="contact.html" class="nav-link">
+                <img src="milkys-contact.png" alt="Contact" class="contact-logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- News Header -->
+    <header class="events-hero">
+        <h1 class="page-title">LATEST NEWS</h1>
+    </header>
+
+    <!-- News Section -->
+    <section class="news-section" id="news">
+        <div class="news-container">
+            <div class="news-grid">
+                <article class="news-item">
+                    <div class="news-date">Oct 15, 2025</div>
+                    <h3>New Artist Residency Program</h3>
+                    <p>We're announcing our new residency program for local artists. A unique opportunity to develop and present new musical projects.</p>
+                    <a href="#" class="news-link">Read More</a>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">Oct 10, 2025</div>
+                    <h3>Space Expansion</h3>
+                    <p>We're expanding our facilities to include a new recording studio and rehearsal room equipped with the best technology.</p>
+                    <a href="#" class="news-link">Read More</a>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">Oct 5, 2025</div>
+                    <h3>Local Artist Collaboration</h3>
+                    <p>Launching a new initiative to collaborate with Los Angeles musicians and producers, creating a true creative hub.</p>
+                    <a href="#" class="news-link">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Signup -->
+    <footer class="footer-signup">
+        <div class="signup-container">
+            <h3>Stay Connected</h3>
+            <p>Subscribe to receive the latest news, events and exclusive releases</p>
+            <form class="signup-form">
+                <input type="email" class="signup-input" placeholder="Your email" required>
+                <button type="submit" class="signup-btn">Subscribe</button>
+            </form>
+            <p class="signup-note">No spam, just the good stuff. You can unsubscribe anytime.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
