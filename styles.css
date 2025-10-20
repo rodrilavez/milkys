@@ -235,7 +235,7 @@ body {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-30px);
     }
 }
 
@@ -347,12 +347,12 @@ body {
 
 /* Events Page Styles */
 .events-hero, .contact-hero {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .page-title {
@@ -364,7 +364,7 @@ body {
 }
 
 .events-section {
-    padding: 80px 40px 120px;
+    padding: 40px 40px 120px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -617,7 +617,7 @@ body {
     }
     
     .simple-info, .events-section, .contact-section {
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
     
     .info-container {
@@ -822,7 +822,7 @@ body {
     }
     
     .events-section {
-        padding: 50px 15px;
+        padding: 30px 15px;
     }
     
     .event-item {
