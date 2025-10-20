@@ -8,6 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <img src="milkies-popup.png" alt="Milky's Announcement" class="popup-image">
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-left">
@@ -45,6 +52,16 @@
             </div>
         </div>
     </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">Purpose</h2>
+            <p class="about-text">
+                Milky's is a Los Angeles based DIY experiential brand and hub that's goal is to cultivate alternative IRL and immersive experiences through music, film and performance. Milky's also lends itself as a modular production studio/location rental with additional office spaces and a private parking lot. Milky's also harbors profound rock producer Will Yip's LA recording studio, The Offices of Talent Mgmt company The Sakai Group and Non-Profit Music Platform ASEMBLI WORLD.
+            </p>
+        </div>
+    </section>
 
     <!-- Merch Section -->
     <section class="merch-section" id="merch">
@@ -128,6 +145,19 @@
                 nav.classList.remove('scrolled');
             }
         });
+
+        // Popup functionality
+        const popupOverlay = document.getElementById('popupOverlay');
+        
+        // Close popup on click anywhere
+        if (popupOverlay) {
+            popupOverlay.addEventListener('click', function() {
+                popupOverlay.style.opacity = '0';
+                setTimeout(function() {
+                    popupOverlay.style.display = 'none';
+                }, 300);
+            });
+        }
     </script>
 </body>
 </html>
